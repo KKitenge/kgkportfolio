@@ -1,11 +1,56 @@
 :root {
     --bkclr: white;
     --footer: black;
+    --ftcolor: white;
+}
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 body {
-    background: transparent;
+    background-color: var(--bkclr);
     display: flex;
+    flex-wrap: wrap;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 12px;
 }
+
+header {
+    overflow: hidden;
+    background-color: var(--bkclr);
+    width: 100%;
+}
+
+header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 25px;
+    text-decoration: none;
+}
+
+header a.active {
+    background-color: rgb(37, 37, 240);
+    color:aliceblue;
+}
+header a:hover {
+    background-color: gold;
+    font-weight: bold;
+}
+
+nav {
+    float: right;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--footer);
+    color: var(--ftcolor)
+}
+
