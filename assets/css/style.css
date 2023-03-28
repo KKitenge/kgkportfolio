@@ -4,12 +4,6 @@
     --ftcolor: white;
 }
 
-.main {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 5%
-}
-
 body {
     background-color: var(--bkclr);
     display: flex;
@@ -17,6 +11,7 @@ body {
     flex-direction: column;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 12px;
+    margin: 5%;
 }
 
 header {
@@ -46,8 +41,7 @@ header a:hover {
 nav {
     float: right;
     overflow: hidden;
-    display: inline;
-   
+    display: inline;   
 }
 
 .image {
@@ -72,6 +66,8 @@ nav {
     max-height: fit-content;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
+    font-size: 20px;
+    line-height: 1.5;
     border-radius: 25px;
     margin-right: 5px;
     margin-left: 5px;
@@ -80,6 +76,9 @@ nav {
 }
 
 .about-sq > pre > .image {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     padding: 10px;
     text-align: justify;
     font-size: 18px;
@@ -127,11 +126,13 @@ pre {
 }
 
 @media screen and (max-width: 768px) {
-    main
+    main,
+    nav
     {flex-direction: column;
         } 
         
-    .about-sq {
+    .about-sq,
+    pre {
         flex: 0 0 50%;
         flex-wrap: wrap;
         flex-direction: column;
@@ -139,7 +140,8 @@ pre {
         max-height: fit-content;
     }
 
-    image {
+    image,
+    pre {
         flex: 0 0 50%;
         flex-wrap: wrap;
         flex-direction: column;
