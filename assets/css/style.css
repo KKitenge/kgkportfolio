@@ -65,7 +65,7 @@ nav {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
     font-size: 20px;
-    line-height: 1.5;
+    line-height: 2;
     border-radius: 25px;
     margin-right: 5px;
     margin-left: 5px;
@@ -127,7 +127,7 @@ p {
 }
 
 @media screen and (max-width: 768px) {
-    nav,
+     nav,
     .about,
     .grid
     {flex-direction: column;
@@ -142,9 +142,8 @@ p {
         max-height: fit-content;
     }
 
-    image
-      {
-        flex: 0 0 50%;
+    .image {
+        flex: 0 0 45%;
         flex-wrap: wrap;
         flex-direction: column;
         max-width: 50%;
