@@ -1,0 +1,32 @@
+{
+  "dependencies": {
+    "bulma": "^0.9.4",
+    "bulma-start": "^0.0.5",
+    "nodemon": "^2.0.22"
+  },
+  "name": "kgkportfolio",
+  "description": "## Description The aim of this project is to create a landing page for a portfolio. This is to be the starting point for a portfolio that will help with employment quests after the bootcamp is completed. While currently a landing page, once assignments are completed, it will be edited to showcase knowledge and growth.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KKitenge/kgkportfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KKitenge/kgkportfolio/issues"
+  },
+  "homepage": "https://github.com/KKitenge/kgkportfolio#readme",
+  "devDependencies": {
+    "eslint": "^8.40.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-promise": "^6.1.1"
+  }
+}

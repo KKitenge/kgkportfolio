@@ -1,177 +1,76 @@
-:root {
-    --bkclr: white;
-    --footer: black;
-    --ftcolor: white;
-}
-
 body {
-    background-color: var(--bkclr);
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 12px;
-    margin: 5%;
+    font-family: 'Cinzel', serif;
+    /* margin: 10px; */
+    /* padding: 5px; */
 }
 
-header {
-    background-color: var(--bkclr);
-    width: 100%;
-}
-
-header a {
-    float: left;
-    color: black;
-    text-align: justify;
-    padding: 15px;
-    font-size: 16px;
-    line-height: 20px;
+a {
     text-decoration: none;
+    color: #000;
 }
 
-header a.active {
-    background-color: rgb(37, 37, 240);
-    color:aliceblue;
-}
-header a:hover {
-    background-color: gold;
-    font-weight: bold;
-}
-
-nav {
-    float: right;  
-}
-
-.image {
-   float: left;
-   padding: 10px;
-   max-width: 20%;
-   max-height: 20%;
-   margin-top: 20px
-}
-
-.bio  {
-    margin: 20px;
-    padding: 10px;
-}
-
-.bio {
-    flex:  1 0 0;
-    padding: 20px;
-    border-style: outset;
-    border-width: 1px;
-    max-width:fit-content;
-    max-height: fit-content;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 1.5;
-    border-radius: 25px;
-    margin-right: 5px;
-    margin-left: 5px;
-    margin-bottom: 15px;
-    background-image: linear-gradient(white, rgb(255, 255, 255),rgb(255, 255, 255), rgb(224, 204, 204));
-}
-
-.about-sq > pre > .image {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 10px;
-    text-align: justify;
-    font-size: 18px;
-    margin: 20px;
-    padding: 25px;
-    width: 20%;
-}
-
-.grid-container {
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-}
-
-p {
-    font-size: 18px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    word-wrap: break-word; 
-    display: flex;   
-    flex-wrap: wrap;
-    flex-direction: column;  
-}
-
-.grid-item {
-    background-color: goldenrod;
-    border-style: outset;
-    padding: 5px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 14px;
+h1 {
     text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
 }
 
-.grid header {
-    position: relative;
-    margin: -1rem 0 1.5rem 0;
-    background-color: blue;
-    padding: .5rem 1rem;
-    color: gold;
-    min-width: 150px;
-    max-width: 150px;
-    min-height: 20px;
-    text-align: left;
-    border: 1px solid gold;
-    border-radius: 5px;
+.site-header {
+    border-bottom: 1px solid #ccc;
+    padding: .5em 1em;
+    background-image: linear-gradient(to left, #1abc9c, #553c9a);
+}
+
+.site-header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.site-identity {
+    float: left;
+}
+
+.site-identity h1 {
+    font-size: 1.5em;
+    margin: .7em 0 .3em 0;
+    display: inline-block;
+}
+
+.site-identity img {
+    max-width: 55px;
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+.site-navigation {
+    float: right;
+}
+
+.site-navigation ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+.site-navigation li {
+    display: inline-block;
+    margin: 1.4em 1em 1em 1em;
+}
+
+footer {    
+    height: auto;
+    background-image: linear-gradient(to right, #1abc9c, #553c9a);
+    color: white;
+    text-align: center;
 }
 
 @media screen and (max-width: 768px) {
-     nav,
-    .about,
-    .grid
-    {flex-direction: column;
-        } 
-        
-    .about-sq
-       {
-        flex: 0 0 50%;
-        flex-wrap: wrap;
-        flex-direction: column;
-        max-width: fit-content;
-        max-height: fit-content;
-    }
-
-    .image {
-        flex: 0 0 45%;
-        flex-wrap: wrap;
-        flex-direction: column;
-        max-width: 50%;
-        max-height: 50%;
-    }
-
-    .grid-container {
-        flex-direction: column;
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    header {
-        width:fit-content;
-    }
+    header {flex-direction: column;
+       } 
 }
 
-
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px){
     header {
         width: 100%;
     }
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background-color: var(--footer);
-    color: var(--ftcolor)
 }
 
