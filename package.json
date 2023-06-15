@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "autoprefixer": "^10.4.14",
+    "bootstrap": "^5.3.0-alpha3",
+    "eslint": "^8.40.0",
+    "nodemon": "^2.0.22",
+    "postcss": "^8.4.23",
+    "sass": "^1.62.1",
+    "stylelint": "^15.6.1"
+  },
+  "name": "kgkportfolio",
+  "description": "## Description The aim of this project is to create a landing page for a portfolio. This is to be the starting point for a portfolio that will help with employment quests after the bootcamp is completed. While currently a landing page, once assignments are completed, it will be edited to showcase knowledge and growth.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KKitenge/kgkportfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KKitenge/kgkportfolio/issues"
+  },
+  "homepage": "https://github.com/KKitenge/kgkportfolio#readme"
+}

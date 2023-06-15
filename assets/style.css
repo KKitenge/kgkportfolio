@@ -1,0 +1,26 @@
+header a {
+    /* float: right; */
+    color: black;
+    text-align: justify;
+    padding: 15px;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+header a.active {
+    /* background-color: rgb(37, 37, 240); */
+    color:aliceblue;
+}
+header a:hover {
+    background-color: gold;
+    font-weight: bold;
+}
+
+nav {
+    float: right;  
+}
+
+.container {
+  width: 800px;
+}

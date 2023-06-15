@@ -20,7 +20,7 @@ header {
 }
 
 header a {
-    float: left;
+    /* float: right; */
     color: black;
     text-align: justify;
     padding: 15px;
@@ -30,7 +30,7 @@ header a {
 }
 
 header a.active {
-    background-color: rgb(37, 37, 240);
+    /* background-color: rgb(37, 37, 240); */
     color:aliceblue;
 }
 header a:hover {
@@ -168,8 +168,7 @@ p {
 }
 
 footer {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     width: 100%;
     background-color: var(--footer);
     color: var(--ftcolor)
