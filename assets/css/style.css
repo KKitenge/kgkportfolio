@@ -3,11 +3,9 @@
     font-family: Palatino, "URW Palladio Larial", "monospace", sans-serif;
 }
 
-h1 {
-    font-weight: bold;
-    color: blue;
+.title {
+    text-align: right;
 }
-
 
 @media (max-width: 768px) {
     .container {
