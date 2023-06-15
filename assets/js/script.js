@@ -1,3 +1,6 @@
+var elem = new Foundation.Reveal(element, options);
+
+
 document.addEventListener('DOMContentLoaded', () => {
   // Functions to open and close a modal
   function openModal($el) {
@@ -55,3 +58,5 @@ function toggle(obj) {
   if (obj.style.display == 'block') obj.style.display = 'none';
   else obj.style.display = 'block';
 }
+
+
